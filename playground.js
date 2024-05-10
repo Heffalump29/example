@@ -22,21 +22,21 @@ function mintNFT (_name, _eyeColor, _shirtType, _bling) {
       "bling": _bling
    }
 
-   NTFs.push(NFT);
+   NFTs.push(NFT);
    console.log("Minted: "+ _name);
 }
 
 // create a "loop" that will go through an "array" of NFT's
 // and print their metadata with console.log()
 function listNFTs () {
-   for(i=0; i<NTFs.length; i++){
-      console.log(NTFs[i]);
+   for( i=0; i < NFTs.length; i++ ){
+      console.log(NFTs[i]);
    }
 }
 
 // print the total number of NFTs we have minted to the console
 function getTotalSupply() {
-   console.log(NTFs.length);
+   console.log(NFTs.length);
 }
 
 // call your functions below this line
